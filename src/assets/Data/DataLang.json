@@ -1,0 +1,15 @@
+{
+        "uz": {
+            "navlink1": "Asosiy",
+            "navlink2": "Haqida",
+            "navlink3": "Faq",
+            "navlink4": "Boglanish"
+        },
+
+        "en": {
+            "navlink1": "Home",
+            "navlink2": "About",
+            "navlink3": "Faq",
+            "navlink4": "Contact"  
+        }
+}

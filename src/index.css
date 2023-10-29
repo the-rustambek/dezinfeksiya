@@ -1,0 +1,24 @@
+ html {
+    scroll-behavior: smooth;
+ }
+
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.container {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}

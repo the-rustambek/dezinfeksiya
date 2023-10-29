@@ -1,0 +1,155 @@
+.faq {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.faq_main_title {
+    color: #020C31;
+    font-family: Unbounded;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.faq_flex {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #cccc;
+    padding-top: 40px;
+}
+
+.faq_acrr_div {
+    width: 1100px;
+}
+
+.accardion {
+    width: 100%;
+    height: 90px;
+    overflow-y: hidden;
+    transition: min-height .4s;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.openAcc {
+    height: 330px;
+}
+
+.accardion_head {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.faq_title {
+    color: #676D83;
+    font-family: Unbounded;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.faq_icon_div {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.faq_acc_icon {
+    font-size: 35px;
+    color: #020C31;
+}
+
+.accardion_body {
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.faq_desc {
+    color: #676D83;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+@media (max-width: 1280px) {
+    .faq_flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .faq_main_title {
+        margin-bottom: 40px;
+    }
+
+    .faq_acrr_div {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 975px) {
+    .faq_title {
+        font-size: 22px;
+    }
+    
+    .faq_desc {
+        font-size: 22px;
+    }
+
+    .openAcc {
+        height: 450px;
+    }
+}
+
+
+
+@media (max-width:715px) {
+    .faq_main_title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:520px) {
+    .faq_main_title {
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width: 596px) {
+    .faq_title {
+        font-size: 19px;
+    }
+    
+    .faq_desc {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .faq_title {
+        font-size: 15px;
+    }
+    
+    .faq_desc {
+        font-size: 15px;
+    }
+}

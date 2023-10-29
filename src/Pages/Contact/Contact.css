@@ -1,0 +1,120 @@
+.contact {
+    width: 100%;
+}
+
+
+.contact_flex {
+    width: 100%;
+    height: 448px;
+    border-radius: 12px;
+    background: radial-gradient(333.17% 80.94% at 51.32% 69.21%, #3DA0FC 0%, rgba(2, 227, 214, 0.20) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 0 24px;
+
+}
+
+
+.contact_left {
+    max-width: 456px;
+    height: 384px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+.contact_title {
+    color:#242825;
+    font-family: Unbounded;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+}
+
+
+.contact_form {
+    width: 100%;
+}
+
+.contact_input {
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background: #F2F2F2;
+    padding: 0 20px;
+    color: #808080;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.contact_send_btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #242825;
+    color: #FFF;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+
+
+/* .contact_right_pic {
+    color: #FAFAFA;
+    font-family: Unbounded;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    transform: translateX(-50px);
+} */
+
+
+.contact_right {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact_img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+
+@media (max-width:1025px) {
+    .contact_right {
+        display: none;
+    }
+}
+
+@media (max-width:579px) {
+    .contact_title {
+        font-size: 28px;
+    }
+}
