@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import CImg from "../../assets/Image/contact.png";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 function Contact() {
 
@@ -44,7 +44,7 @@ function Contact() {
       <section className="contact" id="contact">
         <div className="container">
           <div className="contact_flex">
-            <Fade left>
+            {/* <Fade left> */}
               <div className="contact_left">
                 <h2 className="contact_title">Malumotingizni qoldiring</h2>
                 <form className="contact_form" onSubmit={(e) => sendZakaz(e)}>
@@ -67,7 +67,7 @@ function Contact() {
                   <button className="contact_send_btn">Yuborish</button>
                 </form>
               </div>
-            </Fade>
+            {/* </Fade> */}
             <div className="contact_right">
               <img className="contact_img" src={CImg} alt="pic" />
             </div>

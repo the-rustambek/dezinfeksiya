@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 import Dizinfek from "../../assets/Image/dizinfeksiya.png";
 import Dizinyeksiya from "../../assets/Image/dezinyeksiya.png";
 import Derazatsiya from "../../assets/Image/derazatsiya.png";
@@ -48,15 +48,15 @@ function Service() {
     <>
       <section className="service" id="serv">
         <div className="container">
-          <Fade left>
+          {/* <Fade left> */}
           <h2 className="service_title">Service</h2>
           <p className="service_min_inf">
             Beauty websites can cover everything from makeup and skincare
           </p>
-          </Fade>
+          {/* </Fade> */}
 
           <div className="top_service_flex">
-            <Fade bottom>
+            {/* <Fade bottom> */}
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Dizinfek} alt="" />
               <div className="topser_card_right">
@@ -75,9 +75,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            </Fade>
+            {/* </Fade> */}
 
-            <Fade bottom>
+            {/* <Fade bottom> */}
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Dizinyeksiya} alt="" />
               <div className="topser_card_right">
@@ -98,8 +98,8 @@ function Service() {
                 </p>
               </div>
             </div>
-            </Fade>
-            <Fade bottom>
+            {/* </Fade> */}
+            {/* <Fade bottom> */}
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Derazatsiya} alt="" />
               <div className="topser_card_right">
@@ -122,21 +122,21 @@ function Service() {
                 </p>
               </div>
             </div>
-            </Fade>
+            {/* </Fade> */}
           </div>
 
           <h2 className="service_title">Info</h2>
           <div className="service_flex">
             {serviceData.map((items) => {
               return (
-                <Fade bottom key={items.id}>
-                  <span>
+                // <Fade bottom key={items.id}>
+                  <span key={items.id}>
                     <div className="service_cards">
                       <div>
                       <h3 className="service_card_title">{items.title}</h3>
                       <p className="service_card_text">{items.desc}</p>
                       </div>
-                      <a className="service_card_btn" href="#contact">Buyurtma</a>
+                      <a className="service_card_btn" href="#">Buyurtma</a>
                       <div className="service_card_img_box">
                         <img
                           className="sercive_img"
@@ -146,7 +146,7 @@ function Service() {
                       </div>
                     </div>
                   </span>
-                </Fade>
+                // </Fade>
               );
             })}
           </div>
