@@ -34,6 +34,7 @@
 .mini_pic_home {
     position: relative;
     height: 300px;
+    z-index: -1;
 }
 
 .mini_home_img {
