@@ -1,6 +1,5 @@
 import React from "react";
 import "./Service.css";
-// import { Fade } from "react-reveal";
 import Dizinfek from "../../assets/Image/dizinfeksiya.png";
 import Dizinyeksiya from "../../assets/Image/dezinyeksiya.png";
 import Derazatsiya from "../../assets/Image/derazatsiya.png";
@@ -48,15 +47,12 @@ function Service() {
     <>
       <section className="service" id="serv">
         <div className="container">
-          {/* <Fade left> */}
           <h2 className="service_title">Service</h2>
           <p className="service_min_inf">
             Beauty websites can cover everything from makeup and skincare
           </p>
-          {/* </Fade> */}
 
           <div className="top_service_flex">
-            {/* <Fade bottom> */}
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Dizinfek} alt="" />
               <div className="topser_card_right">
@@ -75,9 +71,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            {/* </Fade> */}
 
-            {/* <Fade bottom> */}
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Dizinyeksiya} alt="" />
               <div className="topser_card_right">
@@ -98,8 +92,6 @@ function Service() {
                 </p>
               </div>
             </div>
-            {/* </Fade> */}
-            {/* <Fade bottom> */}
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Derazatsiya} alt="" />
               <div className="topser_card_right">
@@ -122,14 +114,12 @@ function Service() {
                 </p>
               </div>
             </div>
-            {/* </Fade> */}
           </div>
 
           <h2 className="service_title">Info</h2>
           <div className="service_flex">
             {serviceData.map((items) => {
               return (
-                // <Fade bottom key={items.id}>
                   <span key={items.id}>
                     <div className="service_cards">
                       <div>
@@ -146,7 +136,6 @@ function Service() {
                       </div>
                     </div>
                   </span>
-                // </Fade>
               );
             })}
           </div>
