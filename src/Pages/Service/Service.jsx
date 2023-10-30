@@ -48,15 +48,12 @@ function Service() {
     <>
       <section className="service" id="serv">
         <div className="container">
-          <Fade left>
           <h2 className="service_title">Service</h2>
           <p className="service_min_inf">
             Beauty websites can cover everything from makeup and skincare
           </p>
-          </Fade>
 
           <div className="top_service_flex">
-            <Fade bottom>
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Dizinfek} alt="" />
               <div className="topser_card_right">
@@ -75,9 +72,7 @@ function Service() {
                 </p>
               </div>
             </div>
-            </Fade>
 
-            <Fade bottom>
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Dizinyeksiya} alt="" />
               <div className="topser_card_right">
@@ -98,8 +93,6 @@ function Service() {
                 </p>
               </div>
             </div>
-            </Fade>
-            <Fade bottom>
             <div className="top_ser_cards">
               <img className="topser_card_pic" src={Derazatsiya} alt="" />
               <div className="topser_card_right">
@@ -107,14 +100,13 @@ function Service() {
                   Дератизация — Уничтожению Грызунов.
                 </h3>
                 <p className="topser_card_text">
-                  Дератизация в Ташкенте  представляет собой целый комплекс
+                  Дератизация в Ташкенте представляет собой целый комплекс
                   сложных мер, направленных на уничтожение грызунов. Как
                   известно, грызуны являются довольно выносливыми существами,
                   которые отлично справляются с различного рода опасными
                   воздействиями. Именно поэтому, чтобы их уничтожить необходимо
-                  использовать целый ряд методов. 
-                  
-                  Дератизация в Ташкенте производится везде, где появились грызуны: многоэтажных
+                  использовать целый ряд методов. Дератизация в Ташкенте
+                  производится везде, где появились грызуны: многоэтажных
                   зданиях, складах, магазинах, заведениях общепита, частных
                   домах, на приусадебных участках. Применение по определенной
                   схеме специальных химических препаратов приводит к постепенной
@@ -122,31 +114,30 @@ function Service() {
                 </p>
               </div>
             </div>
-            </Fade>
           </div>
 
           <h2 className="service_title">Info</h2>
           <div className="service_flex">
             {serviceData.map((items) => {
               return (
-                <Fade bottom key={items.id}>
-                  <span>
-                    <div className="service_cards">
-                      <div>
+                <span key={items.id}>
+                  <div className="service_cards">
+                    <div>
                       <h3 className="service_card_title">{items.title}</h3>
                       <p className="service_card_text">{items.desc}</p>
-                      </div>
-                      <a className="service_card_btn" href="#contact">Buyurtma</a>
-                      <div className="service_card_img_box">
-                        <img
-                          className="sercive_img"
-                          src={items.picture}
-                          alt="salom"
-                        />
-                      </div>
                     </div>
-                  </span>
-                </Fade>
+                    <a className="service_card_btn" href="#contact">
+                      Buyurtma
+                    </a>
+                    <div className="service_card_img_box">
+                      <img
+                        className="sercive_img"
+                        src={items.picture}
+                        alt="salom"
+                      />
+                    </div>
+                  </div>
+                </span>
               );
             })}
           </div>
