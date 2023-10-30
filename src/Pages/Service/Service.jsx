@@ -1,6 +1,9 @@
 import React from "react";
 import "./Service.css";
 import { Fade } from "react-reveal";
+import Dizinfek from "../../assets/Image/dizinfeksiya.png";
+import Dizinyeksiya from "../../assets/Image/dezinyeksiya.png";
+import Derazatsiya from "../../assets/Image/derazatsiya.png";
 
 function Service() {
   const serviceData = [
@@ -45,18 +48,95 @@ function Service() {
     <>
       <section className="service" id="serv">
         <div className="container">
+          <Fade left>
           <h2 className="service_title">Service</h2>
           <p className="service_min_inf">
             Beauty websites can cover everything from makeup and skincare
           </p>
+          </Fade>
+
+          <div className="top_service_flex">
+            <Fade bottom>
+            <div className="top_ser_cards">
+              <img className="topser_card_pic" src={Dizinfek} alt="" />
+              <div className="topser_card_right">
+                <h3 className="topser_card_title">
+                  Дезинфекция – Уничтожить Вредоносные Микроорганизмы
+                </h3>
+                <p className="topser_card_text">
+                  Главная задача любой дезинфекции уничтожить опасные
+                  микроорганизмы, способные вызывать инфекции и заболевания.
+                  Дезинфекционные мероприятия избавляют пространство от плесени,
+                  вирусов, грибка, бактерий. Процедура очищает среду от
+                  патогенных организмов, способных возбуждать развитие
+                  инфекционных болезней, токсикацию. Если вы беспричинно
+                  чувствуете недомогание, утомление, слабость, необходимо
+                  вызвать дезинфекторов.
+                </p>
+              </div>
+            </div>
+            </Fade>
+
+            <Fade bottom>
+            <div className="top_ser_cards">
+              <img className="topser_card_pic" src={Dizinyeksiya} alt="" />
+              <div className="topser_card_right">
+                <h3 className="topser_card_title">
+                  Дезинсекция – Уничтожение Насекомых
+                </h3>
+                <p className="topser_card_text">
+                  Со словом «дезинсекция» многие впервые сталкиваются, когда
+                  ищут способ избавиться от нежелательных соседей – клопов,
+                  тараканов, муравьев и других насекомых. Они сами по себе
+                  неприятны, к тому же еще известные переносчики инфекций.
+                  Дезинсекция – это уничтожение насекомых: комаров, мух, клопов,
+                  тараканов, моли, клещей, короедов, мокриц и прочих ползающих и
+                  летающих. Наравне с дератизацией, обработка производится с
+                  помощью специнструмента, к которому относятся генераторы
+                  холодного и горячего тумана, а так же профессиональных
+                  инсектицидов.
+                </p>
+              </div>
+            </div>
+            </Fade>
+            <Fade bottom>
+            <div className="top_ser_cards">
+              <img className="topser_card_pic" src={Derazatsiya} alt="" />
+              <div className="topser_card_right">
+                <h3 className="topser_card_title">
+                  Дератизация — Уничтожению Грызунов.
+                </h3>
+                <p className="topser_card_text">
+                  Дератизация в Ташкенте  представляет собой целый комплекс
+                  сложных мер, направленных на уничтожение грызунов. Как
+                  известно, грызуны являются довольно выносливыми существами,
+                  которые отлично справляются с различного рода опасными
+                  воздействиями. Именно поэтому, чтобы их уничтожить необходимо
+                  использовать целый ряд методов. 
+                  
+                  Дератизация в Ташкенте производится везде, где появились грызуны: многоэтажных
+                  зданиях, складах, магазинах, заведениях общепита, частных
+                  домах, на приусадебных участках. Применение по определенной
+                  схеме специальных химических препаратов приводит к постепенной
+                  гибели этих вредных особей.
+                </p>
+              </div>
+            </div>
+            </Fade>
+          </div>
+
+          <h2 className="service_title">Info</h2>
           <div className="service_flex">
             {serviceData.map((items) => {
               return (
                 <Fade bottom key={items.id}>
-                  <a href="#" >
+                  <span>
                     <div className="service_cards">
+                      <div>
                       <h3 className="service_card_title">{items.title}</h3>
                       <p className="service_card_text">{items.desc}</p>
+                      </div>
+                      <a className="service_card_btn" href="#contact">Buyurtma</a>
                       <div className="service_card_img_box">
                         <img
                           className="sercive_img"
@@ -65,7 +145,7 @@ function Service() {
                         />
                       </div>
                     </div>
-                  </a>
+                  </span>
                 </Fade>
               );
             })}

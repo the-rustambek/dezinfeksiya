@@ -26,7 +26,7 @@ function CleanM() {
                 </h3>
               </Fade>
               <Fade right>
-                <a href="#" className="cleanM_btn">
+                <a href="#contact" className="cleanM_btn">
                   Bog’lanish
                 </a>
               </Fade>

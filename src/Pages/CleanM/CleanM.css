@@ -36,7 +36,7 @@
     font-weight: 700;
     line-height: 48px;
     margin-top: 12px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 
 .cleanM_btn {
@@ -78,6 +78,12 @@
     .cleanM_flex {
         justify-content: flex-start;
     }
+
+    .cleanM {
+        padding-top: 60px;
+    }
+
+
 }
 
 @media (max-width:600px) {

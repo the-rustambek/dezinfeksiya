@@ -44,8 +44,8 @@ function Language() {
         </div>
       )} */}
       <select className="lang_option"  onChange={(e) => onChangeLanguage(e.target.value)}>
-                  <option value="uz">UZ</option>
-                  <option value="ru">Ru</option>
+                  <option className="lang_option" value="uz">Ўзбекча</option>
+                  <option className="lang_option" value="ru">Русский</option>
       </select> 
     </div>
   );

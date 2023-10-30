@@ -34,7 +34,7 @@ function Home() {
                 </div>
               </div>
 
-              <a className="hero_contact_el" href="#">
+              <a className="hero_contact_el" href="#contact">
                 <h4 className="hero_contact_text">{t("homeBtn")}</h4>
                 <span className="hero_contact_icon">
                   <FiArrowUpRight />

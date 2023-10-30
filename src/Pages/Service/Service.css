@@ -1,7 +1,9 @@
 .service {
     width: 100%;
-    padding: 100px 0;
+    padding: 70px 0;
 }   
+
+
 
 .service_title {
     width: 100%;
@@ -56,17 +58,33 @@
 }
 
 .service_card_text {
-    color: #056AC7;
+    color: #495157;
     font-family: Unbounded;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     margin-top: 20px;
 }
 
 .service_cards {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service_card_btn {
+    background-color: #3151c5d0;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 190px;
+    height: 50px;
+    justify-self: flex-end;
 }
 
 .service_card_img_box {
@@ -82,6 +100,61 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+.top_service_flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+}
+
+.top_ser_cards {
+    width: 100%;
+    padding: 20px 10px;
+    border: 2.3px solid #020c315d;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.topser_card_left {
+    width: 30px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.topser_card_pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.topser_card_title {
+    color: #020C31;
+    font-family: Unbounded;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.topser_card_text {
+    color: #495157;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.topser_card_right {
+    max-width: 900px;
+    margin-left: 20px;
 }
 
 
@@ -123,6 +196,19 @@
     .service_cards {
         max-width: 100%;
         margin-right: 0;
+    }
+
+    .service {
+        padding-top: 10px;
+    }
+
+    .top_ser_cards{
+        flex-direction: column;
+    }
+
+    .topser_card_right{
+        margin-left: 0;
+        margin-top: 40px;
     }
 }
 

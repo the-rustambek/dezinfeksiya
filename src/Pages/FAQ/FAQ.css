@@ -1,6 +1,6 @@
 .faq {
     width: 100%;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .faq_main_title {
@@ -32,10 +32,11 @@
     transition: min-height .4s;
     margin-bottom: 40px;
     border-bottom: 1px solid #ccc;
+    transition: all .6s;
 }
 
 .openAcc {
-    height: 330px;
+    height: 200px;
 }
 
 .accardion_head {

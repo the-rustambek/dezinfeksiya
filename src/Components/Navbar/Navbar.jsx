@@ -9,28 +9,24 @@ function Navbar() {
   const [handleMenu, setHandleMenu] = useState(false);
   const [handleNav, setHandleNav] = useState(false);
   const TT = 60;
-  const [t,i18next] = useTranslation()
-
+  const [t, i18next] = useTranslation();
 
   const navLinks = [
     {
-      title:  t("navlink1"),
-      links: "main"
+      title: t("navlink1"),
+      links: "main",
     },
     {
       title: t("navlink2"),
-      links: "about"
-
+      links: "about",
     },
     {
       title: t("navlink3"),
-      links: "serv"
-
+      links: "serv",
     },
     {
       title: t("navlink4"),
-      links: "faq"
-
+      links: "faq",
     },
   ];
 
@@ -43,7 +39,7 @@ function Navbar() {
       <section className={`${handleNav ? "navbar_active" : null} navbar`}>
         <div className="container">
           <div className="navbar_flex">
-            <a className="nav_logo_link" href="#">
+            <a className="nav_logo_link" href="#main">
               Logo
             </a>
 
@@ -66,18 +62,25 @@ function Navbar() {
                   </a>
                 ))}
 
-                <a className="phone_btn_link gg" href="#">
-                  Contact
+                <a
+                  className="phone_btn_link gg"
+                  href="#contact"
+                  onClick={() => setHandleMenu(!handleMenu)}
+                >
+                  {t("navBtn")}
                 </a>
               </div>
 
               <div className="navbar_lang_and_btn_div">
                 <Language />
-                {/* <select className="lang_option" name="lang" id="lang" onChange={(e) => changeLang(e.target.value)}>
-                  <option value="uz">UZ</option>
-                  <option value="en">EN</option>
-                </select> */}
-                <a className="phone_btn_link gg1" href="#">
+                {/* This is langauge dropdown path */}
+                <div
+                  className={`${
+                    handleMenu ? "dark_div_active" : null
+                  } dark_div`}
+                  onClick={() => setHandleMenu(!handleMenu)}
+                ></div>
+                <a className="phone_btn_link gg1" href="#contact">
                   {t("navBtn")}
                 </a>
                 <button

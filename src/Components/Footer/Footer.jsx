@@ -42,17 +42,17 @@ function Footer() {
 
               <div className="footer_social">
                <Fade bottom>
-               <a className="f_social" href="https://facebook.com/">
+               <a className="f_social" href="https://facebook.com/" target="_blank">
                   Facebook <FiArrowUpRight className="fd_a_icon" />
                 </a>
                </Fade>
                 <Fade bottom>
-                <a className="f_social" href="https://telegram.org/">
+                <a className="f_social" href="https://telegram.org/" target="_blank">
                   Telegram <FiArrowUpRight className="fd_a_icon" />
                 </a>
                 </Fade>
                 <Fade bottom> 
-                <a className="f_social" href="https://instagram.org/">
+                <a className="f_social" href="https://instagram.org/" target="_blank">
                   Instagram <FiArrowUpRight className="fd_a_icon" />
                 </a>
                 </Fade>

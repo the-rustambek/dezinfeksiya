@@ -16,7 +16,6 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 44px;
 }
 
 .about_flex {
@@ -32,6 +31,7 @@
 
 .about_cards {
     width: 400px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -40,7 +40,7 @@
 .about_card_icon {
     font-size: 80px;
     color: #1C4CF7;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .about_card_title {
@@ -52,7 +52,7 @@
     font-weight: 600;
     line-height: 32px;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .about_card_text {
@@ -91,6 +91,10 @@
     .about_card_text {
         width: 100%;
     }
+
+    .about {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width:715px) {
@@ -101,6 +105,11 @@
 
 @media (max-width:520px) {
     .about_title2 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .about {
+        margin-top: 0;
     }
 }
+
