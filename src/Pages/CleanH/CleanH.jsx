@@ -1,6 +1,7 @@
 import React from "react";
 import "./CleanH.css";
 import { useTranslation } from "react-i18next";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function CleanH() {
 
@@ -13,12 +14,18 @@ function CleanH() {
           <div className="clean-h_flex">
             <div className="clean-h_tr"></div>
             <div className="clean_info_fath">
-             <h2 className="clean-h_title">
+            <ScrollAnimation animateIn="bounceInRight" duration={1}>
+            <h2 className="clean-h_title">
                 {t("cleanhtitle")}
               </h2>
-              <p className="clean-h_text">
+            </ScrollAnimation>
+             
+            <ScrollAnimation animateIn="bounceInRight" duration={1.1}>
+            <p className="clean-h_text">
                 {t("cleanhtext")}
               </p>
+            </ScrollAnimation>
+              
 
               <a className="clean-h_contact_link" href="#contact">
                 {t("cleanhBtn")}

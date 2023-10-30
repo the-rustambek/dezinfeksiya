@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import CImg from "../../assets/Image/contact.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Contact() {
 
@@ -43,6 +44,7 @@ function Contact() {
       <section className="contact" id="contact">
         <div className="container">
           <div className="contact_flex">
+              <ScrollAnimation animateIn="bounceInLeft" duration={1.1}>
               <div className="contact_left">
                 <h2 className="contact_title">Malumotingizni qoldiring</h2>
                 <form className="contact_form" onSubmit={(e) => sendZakaz(e)}>
@@ -65,6 +67,7 @@ function Contact() {
                   <button className="contact_send_btn">Yuborish</button>
                 </form>
               </div>
+              </ScrollAnimation>
             <div className="contact_right">
               <img className="contact_img" src={CImg} alt="pic" />
             </div>

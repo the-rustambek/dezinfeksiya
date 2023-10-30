@@ -19,7 +19,10 @@ function Home() {
                 <ScrollAnimation animateIn="bounceInLeft">
                 <h1 className="home_title">{t("hometitle")}</h1>
                 </ScrollAnimation>
+                <ScrollAnimation animateIn="bounceInLeft"
+                duration={1.2}>
                 <p className="home_info">{t("homedesc")}</p>
+                </ScrollAnimation>
                 <div className="mini_pic_home">
                   <img
                     className="mini_home_img"
