@@ -16,6 +16,7 @@ function About() {
         <div className="container">
           <h2 className="about_title2">{t("abouttitle")}</h2>
           <div className="about_flex">
+            <Fade bottom>
             <div className="about_cards">
               <BsLightningCharge className="about_card_icon" />
               <h3 className="about_card_title">{t("aboutcardtitle1")}</h3>
@@ -23,7 +24,9 @@ function About() {
               {t("aboutcardtext1")}
               </p>
             </div>
+            </Fade>
 
+            <Fade bottom>
             <div className="about_cards">
               <PiMedalDuotone className="about_card_icon" />
               <h3 className="about_card_title">{t("aboutcardtitle2")}</h3>
@@ -31,7 +34,9 @@ function About() {
               {t("aboutcardtext2")}
               </p>
             </div>
+            </Fade>
 
+            <Fade bottom>
             <div className="about_cards cc">
               <MdOutlineHandshake className="about_card_icon" />
               <h3 className="about_card_title">{t("aboutcardtitle3")}</h3>
@@ -39,6 +44,7 @@ function About() {
               {t("aboutcardtext3")}
               </p>
             </div>
+            </Fade>
           </div>
         </div>
       </section>

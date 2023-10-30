@@ -17,10 +17,14 @@ function Home() {
           <div className="home_flex">
             <div className="home_left">
               <div className="home_hero_top">
+                <Fade bottom>
                     <h1 className="home_title">{t("hometitle")}</h1>
+                </Fade>
+                <Fade bottom>
                   <p className="home_info">
                     {t("homedesc")}
                   </p>
+                </Fade>
                 <div className="mini_pic_home">
                   <img
                     className="mini_home_img"
