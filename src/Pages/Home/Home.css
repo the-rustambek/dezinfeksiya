@@ -3,6 +3,90 @@
     margin-top: 200px;
 }
 
+/* Button animation Home */
+
+.custom-btn_home {
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    font-family: Unbounded;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1); */
+    outline: none;
+}
+
+
+.btn-11_home {
+    border: none;
+    background: rgb(33, 55, 251);
+    /* background: linear-gradient(0deg, rgb(37, 33, 251) 0%, rgb(59, 105, 230) 100%); */
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-11_home:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-11_home:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11_home:hover {
+    opacity: .7;
+}
+
+.btn-11_home:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* Button animation Home */
+
 .home_flex {
     width: 100%;
     display: flex;
@@ -45,7 +129,7 @@
 }
 
 .home_hero_top {
-    height: 630px;
+    height: 490px;
     display: flex;
     flex-direction: column;
 }
@@ -200,6 +284,14 @@
         width: 80px;
         height: 50px;
         font-size: 35px;
+    }
+
+    .home_hero_top  {
+        height: 250px;
+    }
+
+    .btn_hm_H {
+        margin-top: 30px;
     }
 }
 

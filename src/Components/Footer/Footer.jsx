@@ -3,6 +3,7 @@ import "./Footer.css";
 import { HiOutlinePhone, HiOutlineLocationMarker } from "react-icons/hi";
 import { FiArrowUpRight } from "react-icons/fi";
 import ScrollAnimation from "react-animate-on-scroll";
+import { BiPhone } from "react-icons/bi";
 
 function Footer() {
   return (
@@ -34,7 +35,7 @@ function Footer() {
                     <HiOutlinePhone className="f_icon" />
                   </span>
                   <p className="fd_text">
-                    +998 90 123 45 67
+                    +998 90 821 84 84 
                   </p>
                   <FiArrowUpRight className="fd_a_icon" />
                 </a>
@@ -48,7 +49,7 @@ function Footer() {
                </ScrollAnimation>
                
                 <ScrollAnimation animateIn="bounceInLeft" duration={1.4}> 
-                <a className="f_social" href="https://telegram.org/" target="_blank">
+                <a className="f_social" href="https://t.me/dezinfeksiya_tashkent1" target="_blank">
                   Telegram <FiArrowUpRight className="fd_a_icon" />
                 </a>
                 </ScrollAnimation>
@@ -63,6 +64,11 @@ function Footer() {
           </div>
         </div>
       </section>
+      <a href="tel:+998908218484" rel="nofollow" class="btn-call">
+	  	<div class="btn-call__ico">
+        <BiPhone />
+	  	</div>
+	  </a>
     </>
   );
 }

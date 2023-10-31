@@ -2,11 +2,23 @@ import React, { useState } from "react";
 import "./Contact.css";
 import CImg from "../../assets/Image/contact.png";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import Congrulation from "../../assets/Image/congt.png";
+import { RiCloseCircleFill } from "react-icons/ri";
+  
 function Contact() {
 
   const [nameValue, setNameValue] = useState("");
   const [numberValue, setNumberValue] = useState("");
+
+  const [succesM, setSuccesM] = useState(false);
+  const succesStatus = 200;
+
+  const handleSucces = ()=> {
+    setSuccesM(!succesM);
+    setTimeout(() => {
+      setSuccesM(false);
+    }, 4000)
+  } 
 
   let bot = {
     TOKEN: "6196010078:AAFp_QxzIIVposuwGiwr_39zFgS8uQS2MZA",
@@ -27,8 +39,8 @@ function Contact() {
       }
     ).then(
       (success) => {
-        if (success) {
-          console.log("succes");
+        if (success.status == succesStatus) {
+          handleSucces()
         }
       },
       (error) => {
@@ -74,6 +86,15 @@ function Contact() {
           </div>
         </div>
       </section>
+      <div className={`${succesM ? "well_done" : null} contact_sucses_modal_box`} onClick={() => setSuccesM(!succesM)} >
+        <div className="contact_succes">
+          <h3 className="contact_succes_title">
+            Murojatingiz uchun tashakkur. Tez orada sizga aloqaga chiqamiz.
+          </h3>
+          <img src={Congrulation} alt="xsdds" />
+            <RiCloseCircleFill className="contact_succes_close" onClick={() => setSuccesM(!succesM)}/>
+        </div>
+      </div>
     </>
   );
 }

@@ -36,7 +36,7 @@
 }
 
 .openAcc {
-    height: 200px;
+    height: 240px;
 }
 
 .accardion_head {
@@ -123,6 +123,14 @@
 @media (max-width:715px) {
     .faq_main_title {
         font-size: 35px;
+    }
+
+    .openAcc {
+        height: 290px;
+    }   
+    
+    .accardion_head {
+        height: 80px;
     }
 }
 

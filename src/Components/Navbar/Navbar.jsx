@@ -62,13 +62,20 @@ function Navbar() {
                   </a>
                 ))}
 
-                <a
+                {/* <a
                   className="phone_btn_link gg"
                   href="#contact"
                   onClick={() => setHandleMenu(!handleMenu)}
                 >
                   {t("navBtn")}
-                </a>
+                </a> */}
+               <a href="#" className="gg"
+               onClick={() => setHandleMenu(!handleMenu)}
+               >
+               <button className="custom-btn_nav btn-11_nav">
+               {t("navBtn")}<div className="dot"></div>
+                </button>
+               </a>
               </div>
 
               <div className="navbar_lang_and_btn_div">
@@ -80,9 +87,15 @@ function Navbar() {
                   } dark_div`}
                   onClick={() => setHandleMenu(!handleMenu)}
                 ></div>
-                <a className="phone_btn_link gg1" href="#contact">
-                  {t("navBtn")}
+
+                <a href="#" className="gg1" >
+                <button className="custom-btn_nav btn-11_nav">
+                {t("navBtn")}<div className="dot"></div>
+                </button>
                 </a>
+                {/* <a className="phone_btn_link gg1" href="#contact">
+                  {t("navBtn")}
+                </a> */}
                 <button
                   className="open_menu"
                   onClick={() => setHandleMenu(!handleMenu)}

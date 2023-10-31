@@ -27,6 +27,80 @@
 }
 
 
+/* Button C */
+.custom-btn_nav {
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Unbounded;
+    position: relative;
+    display: inline-block;
+    /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1); */
+    outline: none;
+}
+.btn-11_nav {
+    border: none;
+    background: rgb(33, 55, 251);
+    background: linear-gradient(0deg, rgb(37, 33, 251) 0%, rgb(59, 105, 230) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11_nav:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11_nav:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11_nav:hover {
+    opacity: .7;
+}
+.btn-11_nav:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+/* button c */
+
 .navigations {
     /* max-width: 560px; */
     display: flex;
@@ -68,6 +142,8 @@
     display: flex;
     align-items: center;
 }
+
+
 
 
 
@@ -120,6 +196,8 @@
     z-index: 10;
     display: none;
 }
+
+
 
 @media (max-width: 1100px) {
     .nav_links {
@@ -179,19 +257,24 @@
         transform: translateX(210px);
     }
 
+    .gg1 {
+        display: none;
+    }
+
     .gg {
-        display: flex;
+        display: inline-block;
         margin-top: 100px;
         margin-left: 20px;
     }
 
-    .gg1 {
-        display: none;
-    }
+    
 
     .open_menu {
         z-index: 11;
     }
 }
+
+
+
 
 
