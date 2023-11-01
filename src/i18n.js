@@ -4,13 +4,13 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import resources from "./locales";
 
-const supportedLngs = ["uz", "ru"];
+const supportedLngs = ["ru", "uz"];
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     debug: true,
-    fallbackLng: "uz",
+    fallbackLng: "ru",
     supportedLngs,
     interpolation: {
       escapeValue: false,

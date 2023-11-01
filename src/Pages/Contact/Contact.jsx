@@ -4,8 +4,10 @@ import CImg from "../../assets/Image/contact.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import Congrulation from "../../assets/Image/congt.png";
 import { RiCloseCircleFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
   
 function Contact() {
+  const [t, i18next] = useTranslation();
 
   const [nameValue, setNameValue] = useState("");
   const [numberValue, setNumberValue] = useState("");
@@ -17,7 +19,7 @@ function Contact() {
     setSuccesM(!succesM);
     setTimeout(() => {
       setSuccesM(false);
-    }, 4000)
+    }, 5000)
   } 
 
   let bot = {
@@ -58,14 +60,14 @@ function Contact() {
           <div className="contact_flex">
               <ScrollAnimation animateIn="bounceInLeft" duration={1.1}>
               <div className="contact_left">
-                <h2 className="contact_title">Malumotingizni qoldiring</h2>
+                <h2 className="contact_title">{t("contactTitle")}</h2>
                 <form className="contact_form" onSubmit={(e) => sendZakaz(e)}>
                   <input
                     required
                     value={nameValue}
                     className="contact_input"
                     type="text"
-                    placeholder="Ism"
+                    placeholder={t("contactinputTextname")}
                     onChange={(e) => setNameValue(e.target.value)}
                   />
                   <input
@@ -73,10 +75,10 @@ function Contact() {
                     value={numberValue}
                     className="contact_input"
                     type="text"
-                    placeholder="+998"
+                    placeholder="+998-90-123-45-67"
                     onChange={(e) => setNumberValue(e.target.value)}
                   />
-                  <button className="contact_send_btn">Yuborish</button>
+                  <button className="contact_send_btn">{t("contactButton")}</button>
                 </form>
               </div>
               </ScrollAnimation>
@@ -89,7 +91,7 @@ function Contact() {
       <div className={`${succesM ? "well_done" : null} contact_sucses_modal_box`} onClick={() => setSuccesM(!succesM)} >
         <div className="contact_succes">
           <h3 className="contact_succes_title">
-            Murojatingiz uchun tashakkur. Tez orada sizga aloqaga chiqamiz.
+            {t("modalText")}
           </h3>
           <img src={Congrulation} alt="xsdds" />
             <RiCloseCircleFill className="contact_succes_close" onClick={() => setSuccesM(!succesM)}/>

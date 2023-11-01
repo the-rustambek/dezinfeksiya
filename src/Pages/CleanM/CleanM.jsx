@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CleanM.css";
 import MPic from "../../assets/Image/cleanT.jpg";
 import ThreeD from "../../assets/Image/d3icons.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useTranslation } from "react-i18next";
 
 function CleanM() {
+
+  const [t, i18next] = useTranslation();
+
   return (
     <>
       <section className="cleanM">
@@ -21,14 +25,13 @@ function CleanM() {
               </ScrollAnimation>
               <ScrollAnimation animateIn="bounceInLeft" duration={1.3}>
                 <h3 className="cleanM_title">
-                  Bizga ko'p yillardan beri kompaniyamizga ishonch bildirganlar
-                  talaygina
+                  {t("cleanMtitle")}
                 </h3>
               </ScrollAnimation>
               <ScrollAnimation animateIn="bounceInLeft" duration={1.4}>
                 <a href="#contact">
                   <button className="custom-btn_home btn-11_home">
-                    Bog'lanish<div className="dot"></div>
+                    {t("cleanhBtn")}<div className="dot"></div>
                   </button>
                 </a>
                 {/* <a href="#contact" className="cleanM_btn">

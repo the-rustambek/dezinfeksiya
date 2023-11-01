@@ -10,8 +10,8 @@ function Language() {
   const { i18n } = useTranslation();
   const initialLanguage =
     typeof window !== "undefined"
-      ? localStorage.getItem("i18nextLngOne") || "uz"
-      : "ru";
+      ? localStorage.getItem("i18nextLngOne") || "ru"
+      : "uz";
   const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
 
   useEffect(() => {
@@ -44,8 +44,8 @@ function Language() {
         </div>
       )} */}
       <select className="lang_option"  onChange={(e) => onChangeLanguage(e.target.value)}>
-                  <option className="lang_option" value="uz">Ўзбекча</option>
                   <option className="lang_option" value="ru">Русский</option>
+                  <option className="lang_option" value="uz">Ўзбекча</option>
       </select> 
     </div>
   );

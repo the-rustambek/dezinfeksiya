@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdClose } from "react-icons/md";
 import Language from "../Language/Language";
 import { useTranslation } from "react-i18next";
+import Logo from "../../assets/Image/dez_logo2.png";
 
 function Navbar() {
   const [handleMenu, setHandleMenu] = useState(false);
@@ -40,7 +41,7 @@ function Navbar() {
         <div className="container">
           <div className="navbar_flex">
             <a className="nav_logo_link" href="#main">
-              Logo
+              <img className="logo_pic" src={Logo} alt="This is the logo" />
             </a>
 
             <div className="nav_rigth_box">
@@ -69,7 +70,7 @@ function Navbar() {
                 >
                   {t("navBtn")}
                 </a> */}
-               <a href="#" className="gg"
+               <a href="#contact" className="gg"
                onClick={() => setHandleMenu(!handleMenu)}
                >
                <button className="custom-btn_nav btn-11_nav">
@@ -88,7 +89,7 @@ function Navbar() {
                   onClick={() => setHandleMenu(!handleMenu)}
                 ></div>
 
-                <a href="#" className="gg1" >
+                <a href="#contact" className="gg1" >
                 <button className="custom-btn_nav btn-11_nav">
                 {t("navBtn")}<div className="dot"></div>
                 </button>

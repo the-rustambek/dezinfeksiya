@@ -14,11 +14,16 @@
     justify-content: space-between;
 }
 
-.footer_logo {
-    width: 200px;
-    font-size: 50px;
-    font-family: Unbounded;
+
+.footer_logo_link {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 300px;
+    height: 90px;
 }
+
+
 
 .footer_right_div {
     width: 1000px;
@@ -380,6 +385,21 @@
         display: flex;
     }
 } 
+
+@media (max-width:740px) {
+    .footer_logo_link {
+        width: 200px;
+        height: 55px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .footer_logo_link {
+        width: 140px;
+        height: 40px;
+    }
+}
 
 
 

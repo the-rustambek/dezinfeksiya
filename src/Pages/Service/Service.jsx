@@ -4,45 +4,49 @@ import Dizinfek from "../../assets/Image/dizinfeksiya.png";
 import Dizinyeksiya from "../../assets/Image/dezinyeksiya.png";
 import Derazatsiya from "../../assets/Image/derazatsiya.png";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useTranslation } from "react-i18next";
 
 function Service() {
+
+  const [t, i18next] = useTranslation();
+
   const serviceData = [
     {
       id: 1,
-      title: "КЛOПЫ",
-      desc: "Живут в постели, мягкой мебели, текстиле, под дверными коробами и оконными рамами. Питаются кровью людей и теплокровных животных. Провоцируют аллергию и сильный психологический дискомфорт.",
+      title: t("servicetypecardtitle1"),
+      desc: t("servicetypecardtext1"),
       picture:
         "https://dezfarma.uz/wp-content/uploads/2023/03/klopi-150x150.jpg",
       duration: 1.5,
     },
     {
       id: 2,
-      title: "ТAРAКАНЫ",
-      desc: "Переносят на себе возбудители болезней. Живут в щелях, под плинтусами, за мебелью, под ванной, под шкафами и пр. Питаются пищевыми продуктами, бытовыми отходами, кожаными изделиями, бумагой.",
+      title: t("servicetypecardtitle2"),
+      desc: t("servicetypecardtext2"),
       picture:
         "https://dezfarma.uz/wp-content/uploads/2023/03/tarakan-150x150.jpg",
       duration: 1.6,
     },
     {
       id: 3,
-      title: "СКОРПИОН",
-      desc: "Теплолюбивые существа, которые питаются насекомыми и паукообразными. Могут поселиться в сарае и доме, но чаще они встречаются в деревянных строениях.",
+      title: t("servicetypecardtitle3"),
+      desc: t("servicetypecardtext3"),
       picture:
         "https://dezfarma.uz/wp-content/uploads/2023/03/skarpion-150x150.jpg",
       duration: 1.7,
     },
     {
       id: 4,
-      title: "ГРЫЗУНЫ",
-      desc: "Самые распространенные — крысы и мыши. Они переносят на себе возбудители болезней, бегают по всем поверхностям, проделывают ходы в стенах и перекрытиях, снижая надежность строения. Питаются пищевыми продуктами и бытовыми отходами.",
+      title: t("servicetypecardtitle4"),
+      desc: t("servicetypecardtext4"),
       picture:
         "https://dezfarma.uz/wp-content/uploads/2023/03/grizuni-150x150.jpg",
       duration: 1.8,
     },
     {
       id: 5,
-      title: "БЛОХИ",
-      desc: "Попадают в дом на теле питомцев, мигрируют от соседей. Живут в мягкой мебели, постели, коврах, мягких игрушках, под плинтусами и рамами окон и дверей. Питаются кровью людей и животных. Переносят болезни.",
+      title:  t("servicetypecardtitle5"),
+      desc:  t("servicetypecardtext5"),
       picture:
         "https://dezfarma.uz/wp-content/uploads/2023/03/bloxi-150x150.jpg",
       duration: 1.9,
@@ -54,11 +58,11 @@ function Service() {
       <section className="service" id="serv">
         <div className="container">
           <ScrollAnimation animateIn="flipInX" duration={1}>
-            <h2 className="service_title">Хизматлар</h2>
+            <h2 className="service_title">{t("servicetitle")}</h2>
           </ScrollAnimation>
           <ScrollAnimation animateIn="flipInX" duration={1.1}>
             <p className="service_min_inf">
-              Биз сизга самарали ва кафолатли хизмат тақдим етамиз.
+              {t("servicetext")}
             </p>
           </ScrollAnimation>
 
@@ -68,16 +72,10 @@ function Service() {
                 <img className="topser_card_pic" src={Dizinfek} alt="" />
                 <div className="topser_card_right">
                   <h3 className="topser_card_title">
-                    Дезинфекция – Уничтожить Вредоносные Микроорганизмы
+                    {t("servicecardtitle1")}
                   </h3>
                   <p className="topser_card_text">
-                    Главная задача любой дезинфекции уничтожить опасные
-                    микроорганизмы, способные вызывать инфекции и заболевания.
-                    Дезинфекционные мероприятия избавляют пространство от
-                    плесени, вирусов, грибка, бактерий. Процедура очищает среду
-                    от патогенных организмов, Если вы беспричинно чувствуете
-                    недомогание, утомление, слабость, необходимо вызвать
-                    дезинфекторов.
+                    {t("servicecardtext1")}
                   </p>
                 </div>
               </div>
@@ -88,19 +86,10 @@ function Service() {
                 <img className="topser_card_pic" src={Dizinyeksiya} alt="" />
                 <div className="topser_card_right">
                   <h3 className="topser_card_title">
-                    Дезинсекция – Уничтожение Насекомых
+                  {t("servicecardtitle2")}
                   </h3>
                   <p className="topser_card_text">
-                    Со словом «дезинсекция» многие впервые сталкиваются, когда
-                    ищут способ избавиться от нежелательных соседей – клопов,
-                    тараканов, муравьев и других насекомых. Они сами по себе
-                    неприятны, к тому же еще известные переносчики инфекций.
-                    Дезинсекция – это уничтожение насекомых: комаров, мух,
-                    клопов, тараканов, моли, клещей, короедов, мокриц и прочих
-                    ползающих и летающих. Наравне с дератизацией, обработка
-                    производится с помощью специнструмента, к которому относятся
-                    генераторы холодного и горячего тумана, а так же
-                    профессиональных инсектицидов.
+                  {t("servicecardtext2")}
                   </p>
                 </div>
               </div>
@@ -111,18 +100,10 @@ function Service() {
                 <img className="topser_card_pic" src={Derazatsiya} alt="" />
                 <div className="topser_card_right">
                   <h3 className="topser_card_title">
-                    Дератизация — Уничтожению Грызунов.
+                  {t("servicecardtitle3")}
                   </h3>
                   <p className="topser_card_text">
-                    Дератизация в Ташкенте представляет собой целый комплекс
-                    сложных мер, направленных на уничтожение грызунов. Как
-                    известно, грызуны являются довольно выносливыми существами,
-                    которые отлично справляются с различного рода опасными
-                    воздействиями. Именно поэтому, чтобы их уничтожить
-                    необходимо использовать целый ряд методов. Дератизация в
-                    Ташкенте производится везде, где появились грызуны:
-                    многоэтажных зданиях, складах, магазинах, заведениях
-                    общепита, частных домах, на приусадебных участках.
+                  {t("servicecardtext3")}
                   </p>
                 </div>
               </div>
@@ -130,7 +111,7 @@ function Service() {
           </div>
 
           <ScrollAnimation animateIn="flipInX">
-            <h2 className="service_title">Хизмат тури</h2>
+            <h2 className="service_title">{t("servicetype")}</h2>
           </ScrollAnimation>
           <div className="service_flex">
             {serviceData.map((items) => {
@@ -149,7 +130,7 @@ function Service() {
                       {/* <a className="service_card_btn" href="#contact">Buyurtma</a> */}
                       <a href="#contact">
                         <button className="custom-btn_ser-card btn-11_ser-card service_card_btn">
-                          Bog'lanish<div className="dot"></div>
+                          {t("cleanhBtn")}<div className="dot"></div>
                         </button>
                       </a>
                       <div className="service_card_img_box">

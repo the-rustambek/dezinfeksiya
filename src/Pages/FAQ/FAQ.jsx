@@ -1,30 +1,34 @@
 import React, { useState } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "./FAQ.css";
+import { useTranslation } from "react-i18next";
 
 function FAQ() {
+
+  const [t, i18next] = useTranslation();
+
   const [faqData, setFaqData] = useState([
     {
       id: 1,
-      title: "Чем Производится Уничтожение Вредителей?",
+      title: t("faqaccardionhead1"),
       descs:
-        "При помощи специального оборудования инсектициды превращаются в аэрозольный туман и проникают в мельчайшие зазоры между обоями, стенами и плинтусами, в невидимые глазу потенциальные «укрытия» насекомых.",
+        t("faqaccardionbody1"),
       handleFaq: false,
     },
 
     {
       id: 2,
-      title: "Опасны Ли Используемые Вами Препараты?",
+      title: t("faqaccardionhead2"),
       descs:
-        "Для людей, домашних питомцев и растений препараты не представляют опасности. Но после обработки помещение необходимо всё же проветрить в течение 40 минут.",
+      t("faqaccardionbody2"),
       handleFaq: false,
     },
 
     {
       id: 3,
-      title: "Мне Нужно Как-То Подготовить Свой Дом Для Обработки?",
+      title: t("faqaccardionhead3"),
       descs:
-        "В основном нужно изолировать посуду и средства личной гигиены. Также нужно изолировать домашних животных на время обработки. Передвигать мебель и бытовую технику не требуется.",
+      t("faqaccardionbody3"),
       handleFaq: false,
     },
   ]);
@@ -37,7 +41,7 @@ function FAQ() {
       <section className="faq" id="faq">
         <div className="container">
           <div className="faq_flex">
-            <h2 className="faq_main_title">FAQ</h2>
+            <h2 className="faq_main_title">{t("faqtitle")}</h2>
             <div className="faq_acrr_div">
               {faqData.map((items) => {
                 return (

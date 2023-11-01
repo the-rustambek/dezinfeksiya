@@ -3,6 +3,6 @@ import rus from './ru.json';
 
 
 export default { 
-    uz: {translation : uzb},
-    ru: {translation : rus}
+    ru: {translation : rus},
+    uz: {translation : uzb}
 }
