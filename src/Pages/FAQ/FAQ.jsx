@@ -7,31 +7,28 @@ function FAQ() {
 
   const [t, i18next] = useTranslation();
 
-  const [faqData, setFaqData] = useState([
+  const faqData = [
     {
       id: 1,
       title: t("faqaccardionhead1"),
-      descs:
-        t("faqaccardionbody1"),
+      descs: t("faqaccardionbody1"),
       handleFaq: false,
     },
 
     {
       id: 2,
       title: t("faqaccardionhead2"),
-      descs:
-      t("faqaccardionbody2"),
+      descs: t("faqaccardionbody2"),
       handleFaq: false,
     },
 
     {
       id: 3,
       title: t("faqaccardionhead3"),
-      descs:
-      t("faqaccardionbody3"),
+      descs: t("faqaccardionbody3"),
       handleFaq: false,
     },
-  ]);
+  ];
 
   const [hadleFaq ,setHandleFaq] = useState(false);
   const [id, setId] = useState([])

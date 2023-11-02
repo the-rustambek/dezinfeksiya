@@ -5,6 +5,13 @@ import Dizinyeksiya from "../../assets/Image/dezinyeksiya.png";
 import Derazatsiya from "../../assets/Image/derazatsiya.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useTranslation } from "react-i18next";
+import Klopa from "../../assets/Image/klopi.jpg";
+import Tarakan from "../../assets/Image/tarakan.jpg";
+import Skarpion from "../../assets/Image/skarpion.jpg";
+import Grizuni from "../../assets/Image/grizuni.jpg";
+import Bloxi from "../../assets/Image/bloxi.jpg";
+
+
 
 function Service() {
 
@@ -15,40 +22,35 @@ function Service() {
       id: 1,
       title: t("servicetypecardtitle1"),
       desc: t("servicetypecardtext1"),
-      picture:
-        "https://dezfarma.uz/wp-content/uploads/2023/03/klopi-150x150.jpg",
+      picture: Klopa,
       duration: 1.5,
     },
     {
       id: 2,
       title: t("servicetypecardtitle2"),
       desc: t("servicetypecardtext2"),
-      picture:
-        "https://dezfarma.uz/wp-content/uploads/2023/03/tarakan-150x150.jpg",
+      picture: Tarakan,
       duration: 1.6,
     },
     {
       id: 3,
       title: t("servicetypecardtitle3"),
       desc: t("servicetypecardtext3"),
-      picture:
-        "https://dezfarma.uz/wp-content/uploads/2023/03/skarpion-150x150.jpg",
+      picture: Skarpion,
       duration: 1.7,
     },
     {
       id: 4,
       title: t("servicetypecardtitle4"),
       desc: t("servicetypecardtext4"),
-      picture:
-        "https://dezfarma.uz/wp-content/uploads/2023/03/grizuni-150x150.jpg",
+      picture: Grizuni,
       duration: 1.8,
     },
     {
       id: 5,
       title:  t("servicetypecardtitle5"),
       desc:  t("servicetypecardtext5"),
-      picture:
-        "https://dezfarma.uz/wp-content/uploads/2023/03/bloxi-150x150.jpg",
+      picture: Bloxi,
       duration: 1.9,
     },
   ];
