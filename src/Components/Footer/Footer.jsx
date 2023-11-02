@@ -35,7 +35,7 @@ function Footer() {
                 </ScrollAnimation>
             
                 <ScrollAnimation animateIn="bounceInLeft" duration={1.2}>
-                <a href="tel:+998901234567">
+                <a href="tel:+998908218484">
                   <span className="fd_span">
                     <HiOutlinePhone className="f_icon" />
                   </span>

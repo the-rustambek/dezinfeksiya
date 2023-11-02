@@ -26,7 +26,7 @@ function Contact() {
     TOKEN: "6196010078:AAFp_QxzIIVposuwGiwr_39zFgS8uQS2MZA",
     chatID: "-1001877467590",
     message: `
-      Assalomu alaykum sizga yangi buyurtma xabari!%0A
+      Assalomu alaykum. Sizga yangi buyurtma keldi!%0A
       %0AIsmi 👤: ${nameValue};
       %0ATelefon raqami ☎: ${numberValue};`,
   };
