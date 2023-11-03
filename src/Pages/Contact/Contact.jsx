@@ -16,20 +16,8 @@ function Contact() {
   const succesStatus = 200;
 
 
-  const [isValid, setIsValid] = useState(false);
-  const [dbValid, setDbValid] = useState(false);
-  const [thValid, setThValid] = useState(false);
 
-  const handleValidPhone = (e) => {
-    const phoneNumber = e.target.value;
-    setNumberValue(phoneNumber);
-  
-    phoneNumber.length == 9 ? setIsValid(true) : setIsValid(false);
-    phoneNumber.length > 0 ? setDbValid(true) : setDbValid(false);
-    phoneNumber.length > 9 ? setThValid(true) : setThValid(false);
-  };
 
-  let main_text = thValid ? t("alertvar1") : t("alertvar2");
 
 
   const handleSucces = ()=> {
@@ -45,7 +33,7 @@ function Contact() {
     message: `
       Assalomu alaykum. Sizga yangi buyurtma keldi!%0A
       %0AIsmi 👤: ${nameValue};
-      %0ATelefon raqami ☎: ${numberValue};`,
+      %0ATelefon raqami ☎: ${"+"}${numberValue};`,
   };
 
   function sendZakaz(e) {
@@ -87,21 +75,20 @@ function Contact() {
                     placeholder={t("contactinputTextname")}
                     onChange={(e) => setNameValue(e.target.value)}
                   />
-                  <input
+                  
+
+                 <label className="def_plus">
+                 <input
                     required
                     value={numberValue}
-                    className={`${dbValid ? "red_int" : null} ${isValid ? "green_int" : null} ${thValid ? "red_int2" : null} contact_input contact_number`}
+                    className="contact_input contact_number"
                     type="number"
-                    placeholder="90-123-45-67"
-                    defaultValue={numberValue}
-                    onChange={(e) => handleValidPhone(e)}
+                    placeholder="998-90-123-45-67"
+                    defaultValue="998"
+                    onChange={(e) => setNumberValue(e.target.value)}
                   />
-
-                   <div className="alert_con_div">
-                   {!isValid && dbValid ?  <span className="alert_text_contact">
-                      {t("mainalert")} {main_text}
-                </span> : null}
-                   </div>
+                  <span className="def_plusa">+</span>
+                 </label>
 
                   <button id="con_btn" className="contact_send_btn">{t("contactButton")}</button>
                 </form>
