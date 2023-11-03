@@ -10,10 +10,27 @@ function Contact() {
   const [t, i18next] = useTranslation();
 
   const [nameValue, setNameValue] = useState("");
-  const [numberValue, setNumberValue] = useState("");
+  const [numberValue, setNumberValue] = useState(``);
 
   const [succesM, setSuccesM] = useState(false);
   const succesStatus = 200;
+
+
+  const [isValid, setIsValid] = useState(false);
+  const [dbValid, setDbValid] = useState(false);
+  const [thValid, setThValid] = useState(false);
+
+  const handleValidPhone = (e) => {
+    const phoneNumber = e.target.value;
+    setNumberValue(phoneNumber);
+  
+    phoneNumber.length == 9 ? setIsValid(true) : setIsValid(false);
+    phoneNumber.length > 0 ? setDbValid(true) : setDbValid(false);
+    phoneNumber.length > 9 ? setThValid(true) : setThValid(false);
+  };
+
+  let main_text = thValid ? t("alertvar1") : t("alertvar2");
+
 
   const handleSucces = ()=> {
     setSuccesM(!succesM);
@@ -73,12 +90,20 @@ function Contact() {
                   <input
                     required
                     value={numberValue}
-                    className="contact_input"
-                    type="text"
-                    placeholder="+998-90-123-45-67"
-                    onChange={(e) => setNumberValue(e.target.value)}
+                    className={`${dbValid ? "red_int" : null} ${isValid ? "green_int" : null} ${thValid ? "red_int2" : null} contact_input contact_number`}
+                    type="number"
+                    placeholder="90-123-45-67"
+                    defaultValue={numberValue}
+                    onChange={(e) => handleValidPhone(e)}
                   />
-                  <button className="contact_send_btn">{t("contactButton")}</button>
+
+                   <div className="alert_con_div">
+                   {!isValid && dbValid ?  <span className="alert_text_contact">
+                      {t("mainalert")} {main_text}
+                </span> : null}
+                   </div>
+
+                  <button id="con_btn" className="contact_send_btn">{t("contactButton")}</button>
                 </form>
               </div>
               </ScrollAnimation>
