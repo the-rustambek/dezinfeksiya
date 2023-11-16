@@ -35,12 +35,12 @@ function Footer() {
                 </ScrollAnimation>
             
                 <ScrollAnimation animateIn="bounceInLeft" duration={1.2}>
-                <a href="tel:+998908218484">
+                <a href="tel:+998991199933">
                   <span className="fd_span">
                     <HiOutlinePhone className="f_icon" />
                   </span>
                   <p className="fd_text">
-                    +998 90 821 84 84 
+                    +998 99 119 99 33 
                   </p>
                   <FiArrowUpRight className="fd_a_icon" />
                 </a>
@@ -69,7 +69,7 @@ function Footer() {
           </div>
         </div>
       </section>
-      <a href="tel:+998908218484" rel="nofollow" class="btn-call">
+      <a href="tel:+998991199933" rel="nofollow" class="btn-call">
 	  	<div class="btn-call__ico">
         <BiPhone />
 	  	</div>
